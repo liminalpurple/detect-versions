@@ -20,7 +20,7 @@ steps:
 
   - name: Detect OS and tools
     id: detect
-    uses: https://git.tomfos.tr/actions/detect-versions@v1
+    uses: https://git.cisnt.uk/actions/detect-versions@v1
 
   - name: Show detection results
     run: |
@@ -36,7 +36,7 @@ steps:
 steps:
   - name: Detect OS and tools
     id: detect
-    uses: https://git.tomfos.tr/actions/detect-versions@v1
+    uses: https://git.cisnt.uk/actions/detect-versions@v1
 
   - name: Setup Node.js if missing or outdated
     if: steps.detect.outputs.node_major == '' || steps.detect.outputs.node_major < '20'
@@ -51,7 +51,7 @@ steps:
 steps:
   - name: Detect OS and tools
     id: detect
-    uses: https://git.tomfos.tr/actions/detect-versions@v1
+    uses: https://git.cisnt.uk/actions/detect-versions@v1
 
   - name: Cache dependencies
     uses: actions/cache@v3
@@ -108,7 +108,7 @@ on Linux, `sw_vers` on macOS, and `systeminfo` on Windows, with appropriate fall
 ## Contributing
 
 Issues and pull requests can be submitted via the GitHub mirror at
-<https://github.com/tcpipuk/detect-versions>
+<https://github.com/liminalpurple/detect-versions>
 
 ## License
 
